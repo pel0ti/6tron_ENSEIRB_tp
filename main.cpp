@@ -19,14 +19,14 @@ void LEDset()
     myled = 1;
     t.reset();
     t.start();
-    flag = 1;
+    //flag = 1;
 }
 
 void LEDclr()
 {
     myled = 0;
     t.stop();
-    flag = 0;
+    flag = 1;
 }
 
 int main()
@@ -41,6 +41,7 @@ int main()
     while (true) {
         if (flag == 1) {
             printf("[Timer ON] %lld us\n\r", t.elapsed_time().count());
+            flag = 0;
         } else {
             t.reset();
         }
