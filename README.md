@@ -1,5 +1,5 @@
-# Embedded application template
-
+# TP IOT - Groupe 4
+## Kaoutar EL HINA & Anass EL KABBAJ
 ## Requirements
 
 None
